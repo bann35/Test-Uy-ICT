@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraLink Enterprise - Smart Climate Automation</title>
+    <!-- Importing a rugged, high-impact font for the climate crisis text style -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Climate+Crisis&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Premium Tech Startup Global Styles */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0D1117; /* Deep Navy/Charcoal Dark Mode */
+            color: #C9D1D9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* 🔴 Climate Crisis Title with Advanced Text Effects */
+        h1 {
+            font-family: 'Climate Crisis', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            
+            /* Gradient Text Effect */
+            background: linear-gradient(135deg, #FF7B72 0%, #F85149 50%, #58A6FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            
+            /* Atmospheric Smog & Warning Glow Effect */
+            filter: drop-shadow(0 0 15px rgba(248, 81, 73, 0.4));
+            
+            /* Subtle breathing animation to simulate atmospheric monitoring */
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { filter: drop-shadow(0 0 12px rgba(248, 81, 73, 0.3)); }
+            50% { filter: drop-shadow(0 0 25px rgba(88, 166, 255, 0.5)); }
+        }
+
+        .tagline {
+            color: #8B949E;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        /* 🟢 Animated Action Button */
+        .btn-cta {
+            background-color: #238636; /* Vibrant Green Action Button */
+            color: #FFFFFF;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-cta:hover {
+            background-color: #2ea44f;
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(46, 164, 79, 0.4);
+        }
+
+        .btn-cta:active {
+            transform: translateY(1px);
+        }
+
+        /* Live Command Center Console Layout */
+        .dashboard-panel {
+            background-color: #161B22; /* High-Tech Card Fill */
+            border: 1px solid #30363D;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+            margin: 50px 0;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .column {
+            border-right: 1px solid #21262D;
+            padding-right: 15px;
+        }
+
+        .column:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        .column h3 {
+            color: #FFFFFF;
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Status Alerts & Glow Badges */
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .badge-danger {
+            background-color: rgba(248, 81, 73, 0.15);
+            color: #FF7B72;
+            border: 1px solid rgba(248, 81, 73, 0.4);
+        }
+
+        .badge-success {
+            background-color: rgba(56, 139, 253, 0.15);
+            color: #58A6FF;
+            border: 1px solid rgba(56, 139, 253, 0.4);
+        }
+
+        .metric-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 5px 0;
+        }
+
+        .metric-desc {
+            font-size: 0.9rem;
+            color: #8B949E;
+            margin: 0;
+        }
+
+        /* Core Features Structural Layout */
+        .features-section {
+            text-align: left;
+            margin-top: 40px;
+            border-top: 1px solid #21262D;
+            padding-top: 40px;
+        }
+
+        .features-section h2 {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .feature-item {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .feature-title {
+            color: #58A6FF;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Title Layout -->
+        <h1>AURALINK</h1>
+        <p class="tagline">Smart Environmental Automation for Climate-Resilient Infrastructure</p>
+        
+        <!-- Added id="connectBtn" to attach click function -->
+        <button class="btn-cta" id="connectBtn">Request LGU Pilot Access</button>
+
+        <!-- Real-Time Metrics Cloud Console Grid -->
+        <div class="dashboard-panel">
+            <div class="column">
+                <h3>🌬️ Atmospheric Quality</h3>
+                <span class="badge badge-danger">ACUTELY UNHEALTHY</span>
+                <p class="metric-value">155 µg/m³</p>
+                <p class="metric-desc">PM2.5 concentration trapped in local coastal valleys.</p>
+            </div>
+            
+            <div class="column">
+                <h3>⚡ Visayas Power Grid</h3>
+                <span class="badge badge-danger">RED ALERT</span>
+                <p class="metric-value">0 MW Capacity</p>
+                <p class="metric-desc">Rotational blackouts active across Metro Cebu due to thermal load stress.</p>
+            </div>
+            
+            <div class="column">
+                <h3>🏫 Connected Classrooms</h3>
+                <span class="badge badge-success">ISOLATED SANCTUARY</span>
+                <p class="metric-value">Active (99.97%)</p>
+                <p class="metric-desc">Standalone solar battery microgrid running industrial HEPA air scrubbers.</p>
+            </div>
+        </div>
+
+        <!-- Infrastructure Pillars Section -->
+        <div class="features-section">
+            <h2>Core System Infrastructure</h2>
+            
+            <div class="feature-item">
+                • <span class="feature-title">IoT Smart Monitoring</span> — Low-cost sensor units continuously stream live ambient pollution metrics straight to our cloud networks.
+            </div>
+            
+            <div class="feature-item">
+                • <span class="feature-title">Instant Mechanical Overrides</span> — Automated classroom window seals lock into position the moment microclimate thresholds breach safe tiers.
+            </div>
+            
+            <div class="feature-item">
+                • <span class="feature-title">Grid Deficit Rerouting</span> — Smart transfer switches instantly transition school ventilation and cooling arrays over to backup solar battery reserves.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // ⚡ JavaScript Logic for Live Interactive Demo
+document.getElementById('connectBtn').addEventListener('click', function() {
+    // Changes button text to give a visual loading cue
+    this.innerText = "Transmitting Request...";
+    this.style.backgroundColor = "#1f6feb"; // Shifts to blue loading state
+    
+    // Delays pop-up alert slightly to simulate network latency
+    setTimeout(() => {
+        alert("AuraLink Security Handshake Initialized!\n\n" +
+              "• Central Visayas Hub Connection: SECURE\n" +
+              "• Target Endpoint: Office of City Mayor Nestor Archival (Cebu City Hall)\n" +
+              "• Systems Status: Syncing telemetry with CCDRRMO disaster console...\n\n" +
+              "Your LGU pilot access token has been safely generated and transmitted.");
+        
+        // Returns button to normal after interaction finishes
+        document.getElementById('connectBtn').innerText = "Request LGU Pilot Access";
+        document.getElementById('connectBtn').style.backgroundColor = "#238636";
+    }, 800);
+});
+
+    </script>
+
+</body>
+</html>
